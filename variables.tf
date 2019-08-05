@@ -1,3 +1,7 @@
+variable "max_nodes" {
+  default = 3
+}
+
 variable "name" {
   default = "convox"
 }
