@@ -1,9 +1,13 @@
-variable "max_nodes" {
+variable "name" {
+  default = "convox"
+}
+
+variable "node_max" {
   default = 3
 }
 
-variable "name" {
-  default = "convox"
+variable "node_type" {
+  default = "t3.micro"
 }
 
 variable "region" {

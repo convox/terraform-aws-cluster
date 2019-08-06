@@ -15,9 +15,9 @@ module "eks" {
     {
       asg_desired_capacity = 2
       asg_min_size         = 1
-      asg_max_size         = var.max_nodes
+      asg_max_size         = var.node_max
       autoscale            = true
-      instance_type        = "t3.micro"
+      instance_type        = "${var.node_type}"
       name                 = "${var.name}-nodes"
     },
   ]
